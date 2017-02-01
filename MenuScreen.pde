@@ -30,5 +30,16 @@ class MenuScreen extends Buttons
       fill(Color);
     }
     rect(howToPlayX,howToPlayY,howToPlaySize,100);
-  }
+  
+  //text
+    fill(0);
+    textSize(50);
+    text("Play",playX+100,playY+65);
+    text("End",endX+100,endY+65);
+    textSize(40);
+    text("How To Play",howToPlayX+25,howToPlayY+60);
+    fill(0);
+    textSize(67);
+    text("MineSweeper",-215,-200);
+  }//end render()
 }
