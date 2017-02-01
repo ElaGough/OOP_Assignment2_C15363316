@@ -16,5 +16,12 @@ class MenuScreen extends Buttons
       fill(Color);
     }
     rect(playX,playY,playSize,100);  //rect(x1,y1,width,height,corners_ratio);
+    
+    if (endOver) {
+      fill(Highlight);
+    } else {
+      fill(Color);
+    }
+    rect(endX,endY,endSize,100);
   }
 }
