@@ -8,17 +8,17 @@ class Buttons
   boolean howToPlayOver = false;
   
   // Position of play button
-  float playX;
-  float playY;
+  float playX = -150;
+  float playY = -140;
   // Position of How To Play button
-  float howToPlayX;
-  float howToPlayY;
+  float howToPlayX = -150;
+  float howToPlayY = 0;
   // Position of end button
-  float endX;
-  float endY;
+  float endX = -150;
+  float endY = 140;
   // Diameter of buttons
-  int playSize;
-  int endSize;
-  int howToPlaySize;
+  int playSize = 300;
+  int endSize = 300;
+  int howToPlaySize = 300;
     
 }
