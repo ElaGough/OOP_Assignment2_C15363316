@@ -38,4 +38,9 @@ void mousePressed() {
       System.exit(0);
     }
   }
+  
+  //game_screen
+  if (screenID == 2) {
+    //play game :)
+  }
 }
