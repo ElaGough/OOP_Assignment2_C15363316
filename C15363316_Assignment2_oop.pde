@@ -21,3 +21,21 @@ void draw()
     //println("menu_screen working");
   } 
 }
+
+void mousePressed() {
+  //menu_screen
+  if (screenID == 1) {
+    //play button => go to game
+    if(menu_screen.playOver == true) {
+      screenID = 2;
+    }
+    //how to play button => go to how_to_play_screen
+    if(menu_screen.howToPlayOver == true) {
+      screenID = 3;
+    }
+    //end button => end game
+    if(menu_screen.endOver == true) {
+      System.exit(0);
+    }
+  }
+}
