@@ -63,4 +63,33 @@ class MenuScreen extends Buttons
         endOver = playOver = howToPlayOver = false;
       }
     }//end update()
-}
+    
+    //checking to see if mouse is at buttons
+  boolean overPlay(float x, float y, float w, float h) {
+    if (mouseX >= x && mouseX <= x+w && 
+        mouseY >= y && mouseY <= y+h) {
+      return true;
+    } else {
+      return false;
+    }
+  }//end of overPlay()
+  
+  boolean overEnd(float x, float y, float w, float h)  {
+    if (mouseX >= x && mouseX <= x+w && 
+        mouseY >= y && mouseY <= y+h) {
+      return true;
+    } else {
+      return false;
+    }
+  }//end of overEnd()
+  
+  boolean overHowToPlay(float x, float y, float w, float h)  {
+    if (mouseX >= x && mouseX <= x+w && 
+        mouseY >= y && mouseY <= y+h) {
+      return true;
+    } else {
+      return false;
+    }
+  }//end of overHowToPlay()
+  
+}//end of class MenuScreen
