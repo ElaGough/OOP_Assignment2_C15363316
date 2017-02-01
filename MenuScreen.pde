@@ -42,4 +42,25 @@ class MenuScreen extends Buttons
     textSize(67);
     text("MineSweeper",-215,-200);
   }//end render()
+  
+  void update() {
+      if ( overEnd(endX + width /2 , endY + height /2, endSize, endSize/3) ) {
+        endOver = true;
+        playOver = false;
+        howToPlayOver = false;
+      } 
+      else if ( overPlay(playX + width / 2, playY + height /2 , playSize, playSize/3) ) {
+        playOver = true;
+        endOver = false;
+        howToPlayOver = false;
+      } 
+      else if ( overHowToPlay(howToPlayX + width / 2, howToPlayY + height /2 , howToPlaySize, howToPlaySize/3) ) {
+        playOver = false;
+        endOver = false;
+        howToPlayOver = true;
+      } 
+      else {
+        endOver = playOver = howToPlayOver = false;
+      }
+    }//end update()
 }
