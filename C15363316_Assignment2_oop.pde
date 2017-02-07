@@ -13,7 +13,7 @@ void setup()
   
   background(0, 0, 0);
   
-  Silom = loadFont("Silom-48.vlw");
+  Silom = createFont("PressStart2P-Regular.ttf",10);
   
   menu_screen = new MenuScreen();
 }
