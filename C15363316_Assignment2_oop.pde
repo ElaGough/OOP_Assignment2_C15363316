@@ -13,7 +13,7 @@ void setup()
   
   background(0, 0, 0);
   
-  Font = createFont("PressStart2P-Regular.ttf",10);
+  Font = createFont("PressStart2P-Regular.ttf",50);
   
   menu_screen = new MenuScreen();
 }

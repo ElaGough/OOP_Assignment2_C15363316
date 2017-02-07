@@ -33,15 +33,15 @@ class MenuScreen extends Buttons
   
   //text
     fill(255);
-    textSize(50);
+    textSize(10);
     textFont(Font);
-    text("Play",playX+100,playY+65);
-    text("End",endX+100,endY+65);
-    textSize(40);
-    text("How To Play",howToPlayX+25,howToPlayY+60);
+    text("Play",playX+55,playY+70);
+    text("End",endX+75,endY+70);
+    textSize(25);
+    text("How To Play",howToPlayX+15,howToPlayY+60);
     fill(255);
-    textSize(67);
-    text("MineSweeper",-215,-200);
+    textSize(60);
+    text("MineSweeper",-320,-200);
   }//end render()
   
   void update() {
