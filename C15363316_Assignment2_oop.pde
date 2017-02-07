@@ -4,12 +4,16 @@ int screenID = 1;
 
 MenuScreen menu_screen;
 
+PFont Silom;
+
 void setup()
 {
   //fullScreen();
   size(700,700);
   
   background(0, 0, 0);
+  
+  Silom = loadFont("Silom-48.vlw");
   
   menu_screen = new MenuScreen();
 }
