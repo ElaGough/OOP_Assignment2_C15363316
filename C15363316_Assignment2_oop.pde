@@ -3,6 +3,7 @@
 int screenID = 1;
 
 MenuScreen menu_screen;
+MineSweeper mine_sweeper;
 
 PFont Font;
 
@@ -16,14 +17,22 @@ void setup()
   Font = createFont("PressStart2P-Regular.ttf",50);
   
   menu_screen = new MenuScreen();
+  mine_sweeper = new MineSweeper();
 }
 
 void draw()
 {
+  //menu screen
   if (screenID == 1 ) { 
     menu_screen.render();
     //println("menu_screen working");
   } 
+  
+  //game_screen
+  if (screenID == 2) {
+    //play game :)
+    mine_sweeper.render();
+  }
 }
 
 void mousePressed() {
@@ -43,8 +52,5 @@ void mousePressed() {
     }
   }
   
-  //game_screen
-  if (screenID == 2) {
-    //play game :)
-  }
+  
 }
