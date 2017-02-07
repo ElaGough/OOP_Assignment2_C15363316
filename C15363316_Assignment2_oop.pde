@@ -22,13 +22,15 @@ void setup()
 
 void draw()
 {
-  //menu screen
+  /****************************************************/
+  //MENU SCREEN
   if (screenID == 1 ) { 
     menu_screen.render();
     //println("menu_screen working");
   } 
   
-  //game_screen
+  /****************************************************/
+  //GAME SCREEN
   if (screenID == 2) {
     //play game :)
     mine_sweeper.render();
@@ -36,7 +38,8 @@ void draw()
 }
 
 void mousePressed() {
-  //menu_screen
+  /****************************************************/
+  //MENU SCREEN
   if (screenID == 1) {
     //play button => go to game
     if(menu_screen.playOver == true) {
@@ -52,5 +55,7 @@ void mousePressed() {
     }
   }
   
+  /****************************************************/
+  //CLICKING CELLS
   
 }
