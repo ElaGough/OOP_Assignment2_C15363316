@@ -6,7 +6,7 @@ class MenuScreen extends Buttons
     translate(width/2, height/2);
     
     update();
-    stroke(0);
+    stroke(255);
     fill(100);
     
     //highlighting button

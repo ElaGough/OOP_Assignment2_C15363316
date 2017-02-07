@@ -1,7 +1,7 @@
 class Buttons
 {
-  color Color = color(200,250,0);
-  color Highlight = color(200,230,0);
+  color Color = color(0);
+  color Highlight = color(255,0,0);
   
   boolean playOver = false;
   boolean endOver = false;
