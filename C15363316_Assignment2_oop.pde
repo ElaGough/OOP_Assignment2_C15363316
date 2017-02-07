@@ -9,7 +9,7 @@ void setup()
   //fullScreen();
   size(700,700);
   
-  background(0, 200, 200);
+  background(0, 0, 0);
   
   menu_screen = new MenuScreen();
 }
