@@ -4,7 +4,7 @@ int screenID = 1;
 
 MenuScreen menu_screen;
 
-PFont Silom;
+PFont Font;
 
 void setup()
 {
@@ -13,7 +13,7 @@ void setup()
   
   background(0, 0, 0);
   
-  Silom = createFont("PressStart2P-Regular.ttf",10);
+  Font = createFont("PressStart2P-Regular.ttf",10);
   
   menu_screen = new MenuScreen();
 }

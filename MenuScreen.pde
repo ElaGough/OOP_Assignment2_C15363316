@@ -34,7 +34,7 @@ class MenuScreen extends Buttons
   //text
     fill(255);
     textSize(50);
-    textFont(Silom);
+    textFont(Font);
     text("Play",playX+100,playY+65);
     text("End",endX+100,endY+65);
     textSize(40);
