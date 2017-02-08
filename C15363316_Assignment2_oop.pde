@@ -41,7 +41,7 @@ void setup()
   stars = new Stars(); //initilases stars
   
   //Rendering the game
-    spawnNewLevel(); //Spawns a new level
+    spawnNewLevel(); //Spawns a new level and renders game
   /*if (screenID == 2) {
     //play game :)
     //Rendering the game
@@ -64,9 +64,10 @@ void draw()
   
   /****************************************************/
   //game_screen
-  if (screenID == 2) { //Allows the game to continually run
+  if (screenID == 2) { //Allows the game to continually run provided player has pressed play
     //play game :)
     background(0);
+    stroke(0);
     
     for (int i = 0; i < cellAssignments.length; i++) //Gets the x co-ordinate of each cell
     {
@@ -102,14 +103,16 @@ void draw()
     fill(255); //Fills white
     textAlign(CENTER); //Aligns text to the center
     textSize(SCREEN_SIZE/25); //Sets the text size
-    text("Minesweeper", SCREEN_SIZE/2.1, MENU_HEIGHT*3/4); //Writes the title
+    text("Minesweeper", SCREEN_SIZE/2, MENU_HEIGHT*3.5/4); //Writes the title
     textSize(SCREEN_SIZE*4/250);
     if(!gameOverState && gameTimer < clockMax)
     {
       gameTimer++;
     }
-    text("Time: " + (int)(gameTimer), SCREEN_SIZE/12, MENU_HEIGHT*9/13);
-    text("Flags Left: " + flagsLeft, SCREEN_SIZE*44/51, MENU_HEIGHT*9/13);
+    textAlign(LEFT);
+    text("Time: " + (int)(gameTimer), SCREEN_SIZE/40, MENU_HEIGHT*9/13);
+    text("Flags Left: " + flagsLeft, SCREEN_SIZE*38/51, MENU_HEIGHT*9/13);
+    textAlign(CENTER);
   }
   
   /****************************************************/
