@@ -15,7 +15,7 @@ class Buttons
   float endY = 500;
   // Position of back button
   float backX = 190;
-  float backY = 200;
+  float backY = 550;
   // Diameter of buttons
   int playSize = 300;
   int endSize = 300;

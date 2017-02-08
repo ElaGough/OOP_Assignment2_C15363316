@@ -19,21 +19,28 @@ class HowToPlayScreen extends Buttons
     rect(backX,backY,backSize,100);  //rect(x1,y1,width,height,corners_ratio);
     
     //text
+    textFont(Font);
     fill(255);
     textSize(60);
-    text("How To Play",-325,-200);
+    text("How To Play",25,100);
     textSize(20);
-    text("The goal is to uncover all cells\nthat are not containing mines.",-320,-150);
-    text("Left Click to select cells",-200,-50);
-    text("Right Click to put down\nflags",-200,-0);
-    text("Beware of mines!",-200,70);
-    text("Use the numbers to detect the\nmines nearby",-320,140);
+    text("The goal is to uncover all cells\nthat are not containing mines.",30,150);
+    text("Left Click to select cells",150,250);
+    text("Right Click to put down\nflags",150,315);
+    text("Beware of mines!",150,400);
+    text("Use the numbers to detect the\nmines nearby",30,480);
     textSize(50);
     text("Back",backX+50,backY+75);
     
     //symbols
+    /* mine */
     stroke(255); fill(0);
-    ellipse(-250, 80, CELL_SIZE/2, CELL_SIZE/2); //Draws the mine
+    ellipse(80, 390, CELL_SIZE, CELL_SIZE); //Draws the mine
+    /* flag */
+    stroke(255); fill(#FF0000);
+    ellipse(80, 315, CELL_SIZE, CELL_SIZE); //Draws the mine
+    /* cursor */
+    
   }//end render()
   
   void update() {
