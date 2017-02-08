@@ -28,7 +28,7 @@ class HowToPlayScreen extends Buttons
     text("Right Click to put down\nflags",150,315);
     text("Beware of mines!",150,400);
     text("Use the numbers to detect the\nmines nearby .... Good Luck :)",30,460);
-    text("Total Time: 10000 secs (2.7 hrs)",30,530);
+    text("Total Time: 7200 secs (2 hrs)",30,530);
     //textAlign(CENTER);
     textSize(65);text("N",70,640);textSize(20);text("NewGame",30,670);
     textSize(65);text("M",570,640);textSize(20);text("Menu",560,670);

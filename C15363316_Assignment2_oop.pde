@@ -17,7 +17,7 @@ final int SCREEN_SIZE = 700; //Dimensions of the screen
 final int MENU_HEIGHT = SCREEN_SIZE/15; //Height of the menu
 boolean gameOverState = false;
 float gameTimer = 0; //The game time so far (exact)
-int clockMax = 9999; //The maximum time on the clock
+int clockMax = 720000; //The maximum time on the clock
 
 //Variables pertaining to the cells
 PFont cellFont; //Creates a variable to hold the cell font
