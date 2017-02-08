@@ -149,14 +149,14 @@ void mousePressed() {
     }
     //end button => end game
     if(menu_screen.endOver == true) {
-      System.exit(0);
+      System.exit(0); //exit screen
     }
   }
   
   /****************************************************/
   //CHOOSING CELLS
   else if (screenID == 2) {
-    mine_sweeper.render();
+    mine_sweeper.render(); //
   }
   
   /****************************************************/

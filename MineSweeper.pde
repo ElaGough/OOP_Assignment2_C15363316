@@ -36,6 +36,10 @@ class MineSweeper
                 flagsLeft += (cellAssignments[i][j].flagCell) ? 1 : -1; //Modify number of flags left
                 cellAssignments[i][j].flagCell = !cellAssignments[i][j].flagCell; //If right clicked, flag the cell
                 //Adds one to all adjacent flag counts
+                if ((flagsLeft == 0))
+                {
+                  gameOverState = true;
+                }
                 if (i > 0) 
                 {
                   cellAssignments[i - 1][j].adjacentFlags += (cellAssignments[i][j].flagCell) ? 1 : -1;
