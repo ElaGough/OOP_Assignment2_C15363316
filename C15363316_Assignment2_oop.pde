@@ -161,14 +161,14 @@ void mousePressed() {
 }
 
 void keyPressed() {
-  if ((key == 'N' || key == 'n') && gameOverState) //If the user presses 'N' after a game over
+  if ((key == 'N' || key == 'n')) //If the user presses 'N' after a game over
   { 
     gameOverState = false; //Turn off the game over mode
     gameTimer = 0; //Resets game timer
     flagsLeft = TOTAL_MINES; //Resets number of flags left
     spawnNewLevel(); //Spawn a new level
   }
-  if ((key == 'M' || key == 'm') && gameOverState) //If the user presses 'N' after a game over
+  if ((key == 'M' || key == 'm')) //If the user presses 'N' after a game over
   { 
     gameOverState = false; //Turn off the game over mode
     gameTimer = 0; //Resets game timer
