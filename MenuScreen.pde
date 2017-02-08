@@ -35,6 +35,7 @@ class MenuScreen extends Buttons
     rect(howToPlayX,howToPlayY,howToPlaySize,100);
   
   //text
+    textAlign(LEFT);
     fill(255);
     textSize(10);
     textFont(Font);

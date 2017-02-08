@@ -170,6 +170,7 @@ void keyPressed() {
     gameOverState = false; //Turn off the game over mode
     gameTimer = 0; //Resets game timer
     flagsLeft = TOTAL_MINES; //Resets number of flags left
+    spawnNewLevel(); //Spawn a new level
     screenID = 1;
   }
 }

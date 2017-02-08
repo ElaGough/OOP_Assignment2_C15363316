@@ -20,6 +20,7 @@ class HowToPlayScreen extends Buttons
     
     //text
     textFont(Font);
+    textAlign(LEFT);
     fill(255);
     textSize(60);
     text("How To Play",25,100);
