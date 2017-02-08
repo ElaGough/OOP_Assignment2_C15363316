@@ -73,6 +73,7 @@ void draw()
     background(0);
     stroke(0);
     
+    //always running this
     for (int i = 0; i < cellAssignments.length; i++) //Gets the x co-ordinate of each cell
     {
       for (int j = 0; j < cellAssignments[0].length; j++)  //Gets the y co-ordinate of each cell
@@ -113,7 +114,7 @@ void draw()
     {
       gameTimer++;
     }
-    if(gameTimer >= clockMax)
+    if(gameTimer >= clockMax) //Game Over when timer reaches max
     {
       gameOverState = true;
     }
