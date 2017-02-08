@@ -23,7 +23,7 @@ int clockMax = 720000; //The maximum time on the clock
 PFont cellFont; //Creates a variable to hold the cell font
 Cell[][] cellAssignments; //Array holding the co-ordinates of the cells
 final int CELL_SIZE = SCREEN_SIZE/35; //Size of the cell
-final int TOTAL_MINES = 140; //Total number of mines on the grid
+final int TOTAL_MINES = 100; //Total number of mines on the grid
 int flagsLeft = TOTAL_MINES; //The total number of flags
 
 
