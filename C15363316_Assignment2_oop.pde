@@ -55,10 +55,13 @@ void draw()
   /****************************************************/
   //menu screen
   if (screenID == 1 ) { 
+    //background
     noStroke();
     fill(0);
     rect(0,0,700,700);
+    //stars background
     callstars();
+    //buttons and layount for starting screen
     menu_screen.render();
     //println("menu_screen working");
   } 
@@ -87,7 +90,7 @@ void draw()
       }
     }
   
-    if (gameOverState) //If the user has lost
+    if (gameOverState) //If the user has lost (Game Over)
     { 
       textFont(Font);
       fill(255, 255, 255, 150);
@@ -100,15 +103,19 @@ void draw()
     
     textFont(Font);
     fill(0); //Fills with a darker color
-    rect(0, 0, SCREEN_SIZE, MENU_HEIGHT); //Draws the HUD bar
+    rect(0, 0, SCREEN_SIZE, MENU_HEIGHT); //Draws the top bar
     fill(255); //Fills white
     textAlign(CENTER); //Aligns text to the center
     textSize(SCREEN_SIZE/25); //Sets the text size
     text("Minesweeper", SCREEN_SIZE/2, MENU_HEIGHT*3.5/4); //Writes the title
     textSize(SCREEN_SIZE*4/250);
-    if(!gameOverState && gameTimer < clockMax)
+    if(!gameOverState && gameTimer < clockMax) //timer continues until it reaches max
     {
       gameTimer++;
+    }
+    if(gameTimer >= clockMax)
+    {
+      gameOverState = true;
     }
     textAlign(LEFT);
     text("Time: " + (int)(gameTimer), SCREEN_SIZE/40, MENU_HEIGHT*9/13);
