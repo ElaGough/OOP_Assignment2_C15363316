@@ -35,10 +35,10 @@ class MenuScreen extends Buttons
     fill(255);
     textSize(10);
     textFont(Font);
-    text("Play",playX+55,playY+70);
-    text("End",endX+75,endY+70);
+    text("Play",playX+55,playY+75);
+    text("End",endX+75,endY+75);
     textSize(25);
-    text("How To Play",howToPlayX+15,howToPlayY+60);
+    text("How To Play",howToPlayX+15,howToPlayY+65);
     fill(255);
     textSize(60);
     text("MineSweeper",30,140);
