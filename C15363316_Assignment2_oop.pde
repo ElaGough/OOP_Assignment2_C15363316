@@ -30,11 +30,12 @@ int flagsLeft = TOTAL_MINES; //The total number of flags
 void setup()
 {
   //fullScreen();
-  size(700,700);
-  background(0, 0, 0);
+  size(700,700); //size of screen
+  background(0, 0, 0); //black background
   
-  Font = createFont("PressStart2P-Regular.ttf",50);
+  Font = createFont("PressStart2P-Regular.ttf",50); //font loaded in
   
+  //initilases classes
   menu_screen = new MenuScreen();
   mine_sweeper = new MineSweeper();
   htp_screen = new HowToPlayScreen();
