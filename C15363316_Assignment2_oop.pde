@@ -31,7 +31,7 @@ void setup()
 {
   //fullScreen();
   size(700,700);
-  
+  translate(width/2, height/2);
   background(0, 0, 0);
   
   Font = createFont("PressStart2P-Regular.ttf",50);
@@ -89,11 +89,11 @@ void draw()
     { 
       textFont(Font);
       fill(255, 255, 255, 150);
-      rect(0, SCREEN_SIZE*2/5, SCREEN_SIZE, SCREEN_SIZE/4);
+      rect(0, SCREEN_SIZE*2/5, SCREEN_SIZE, SCREEN_SIZE/3);
       textSize(SCREEN_SIZE/30);
       fill(0);
       textAlign(CENTER);
-      text("GAME OVER" + "\n Press 'N' to Start a New Game", SCREEN_SIZE/2, SCREEN_SIZE/2);
+      text("GAME OVER" + "\n----------" + "\n Press 'N' to Start a New Game" + "\n\n Press 'M' to go back to Menu", SCREEN_SIZE/2, SCREEN_SIZE/2);
     }
     
     textFont(Font);
@@ -165,6 +165,13 @@ void keyPressed() {
     gameTimer = 0; //Resets game timer
     flagsLeft = TOTAL_MINES; //Resets number of flags left
     spawnNewLevel(); //Spawn a new level
+  }
+  if ((key == 'M' || key == 'm') && gameOverState) //If the user presses 'N' after a game over
+  { 
+    gameOverState = false; //Turn off the game over mode
+    gameTimer = 0; //Resets game timer
+    flagsLeft = TOTAL_MINES; //Resets number of flags left
+    screenID = 1;
   }
 }
 

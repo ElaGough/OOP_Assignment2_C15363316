@@ -1,5 +1,6 @@
 //function to call stars
 void callstars(){
+  
   fill(random(50,255)); //randomizes colour of stars to make them flicker
   while (starList.size()>500) { //stops arrayList from getting too big
     starList.remove(0);
