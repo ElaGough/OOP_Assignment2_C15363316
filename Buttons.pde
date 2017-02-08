@@ -3,6 +3,11 @@ class Buttons
   color Color = color(20,0,0);
   color Highlight = color(160,0,0);
   
+  boolean playOver = false;
+  boolean endOver = false;
+  boolean howToPlayOver = false;
+  boolean backOver = false;
+  
   
   // Position of play button
   float playX = 190;

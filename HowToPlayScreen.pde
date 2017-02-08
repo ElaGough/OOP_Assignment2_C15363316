@@ -1,8 +1,6 @@
 class HowToPlayScreen extends Buttons
 {
   
-  boolean backOver = false;
-  
   void render()
   {
     
