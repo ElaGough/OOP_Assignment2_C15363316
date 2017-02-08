@@ -42,7 +42,7 @@ Game that plays the classic Minesweeper. Includes a menu navigation screen
 - N => New Game
 - M => Back to Menu
 
-** Inheretance: **
+** Inheritance: **
 
 - Using extends to avoid writing same variables over and over. Also so that you can change data in the variables much easier. Leads into interfaces and polymorphism.
 
