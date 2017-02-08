@@ -17,7 +17,7 @@ final int SCREEN_SIZE = 700; //Dimensions of the screen
 final int MENU_HEIGHT = SCREEN_SIZE/15; //Height of the menu
 boolean gameOverState = false;
 float gameTimer = 0; //The game time so far (exact)
-int clockMax = 999999; //The maximum time on the clock
+int clockMax = 9999; //The maximum time on the clock
 
 //Variables pertaining to the cells
 PFont cellFont; //Creates a variable to hold the cell font
@@ -119,7 +119,7 @@ void draw()
       gameOverState = true;
     }
     textAlign(LEFT);
-    text("Time: " + (int)(gameTimer), SCREEN_SIZE/40, MENU_HEIGHT*9/13);
+    text("Time: " + (int)(gameTimer/60), SCREEN_SIZE/40, MENU_HEIGHT*9/13);
     text("Flags Left: " + flagsLeft, SCREEN_SIZE*38/51, MENU_HEIGHT*9/13);
     textAlign(CENTER);
   }
