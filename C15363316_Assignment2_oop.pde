@@ -1,6 +1,6 @@
 //OOP Assignment 2 Game C15363316
 
-int screenID = 3;
+int screenID = 1;
 
 MenuScreen menu_screen;
 MineSweeper mine_sweeper;
