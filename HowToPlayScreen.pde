@@ -28,9 +28,9 @@ class HowToPlayScreen extends Buttons
     text("Right Click to put down\nflags",150,315);
     text("Beware of mines!",150,400);
     text("Use the numbers to detect the\nmines nearby .... Good Luck :)",30,480);
-    textAlign(CENTER);
-    textSize(70);text("N",50,560);textSize(50);text("New Game",30,560);
-    textSize(70);text("M",660,560);textSize(50);text("Menu",660,560);
+    //textAlign(CENTER);
+    textSize(65);text("N",70,640);textSize(20);text("NewGame",30,670);
+    textSize(65);text("M",570,640);textSize(20);text("Menu",560,670);
     textAlign(LEFT);
     textSize(50);
     text("Back",backX+50,backY+75);
