@@ -40,7 +40,9 @@ class HowToPlayScreen extends Buttons
     stroke(255); fill(#FF0000);
     ellipse(80, 315, CELL_SIZE, CELL_SIZE); //Draws the mine
     /* cursor */
-    
+    stroke(255); fill(255);
+    triangle(70,225, 95,240, 91, 245);
+    triangle(70,225, 90,230, 80,245);
   }//end render()
   
   void update() {
