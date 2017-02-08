@@ -117,6 +117,9 @@ void draw()
   if (screenID == 3)
   {
     translate(width/2, height/2);
+    noStroke();
+    fill(0);
+    rect(-350,-350,700,700);
     htp_screen.render();
   }
 }
