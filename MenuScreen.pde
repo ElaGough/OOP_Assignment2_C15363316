@@ -1,9 +1,12 @@
 class MenuScreen extends Buttons
 {
   
+  boolean playOver = false;
+  boolean endOver = false;
+  boolean howToPlayOver = false;
+  
   void render()
   {
-    translate(width/2, height/2);
     
     update();
     stroke(255);

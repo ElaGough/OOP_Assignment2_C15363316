@@ -4,6 +4,11 @@ int screenID = 1;
 
 MenuScreen menu_screen;
 MineSweeper mine_sweeper;
+HowToPlayScreen htp_screen;
+Stars stars; //declares stars
+
+//array list for stars created so they are infinetly generated
+ArrayList<Stars> starList = new ArrayList<Stars>(); 
 
 PFont Font;
 
@@ -12,7 +17,7 @@ final int SCREEN_SIZE = 700; //Dimensions of the screen
 final int MENU_HEIGHT = SCREEN_SIZE/15; //Height of the menu
 boolean gameOverState = false;
 float gameTimer = 0; //The game time so far (exact)
-int clockMax = 999; //The maximum time on the clock
+int clockMax = 999999999; //The maximum time on the clock
 
 //Variables pertaining to the cells
 PFont cellFont; //Creates a variable to hold the cell font
@@ -33,6 +38,8 @@ void setup()
   
   menu_screen = new MenuScreen();
   mine_sweeper = new MineSweeper();
+  htp_screen = new HowToPlayScreen();
+  stars = new Stars(); //initilases stars
   
   if (screenID == 2) {
     //play game :)
@@ -46,6 +53,11 @@ void draw()
   /****************************************************/
   //menu screen
   if (screenID == 1 ) { 
+    translate(width/2, height/2);
+    noStroke();
+    fill(0);
+    rect(-350,-350,700,700);
+    callstars();
     menu_screen.render();
     //println("menu_screen working");
   } 
@@ -96,8 +108,16 @@ void draw()
     {
       gameTimer++;
     }
-    text("Time: " + (int)gameTimer/50, SCREEN_SIZE/12, MENU_HEIGHT*9/13);
+    text("Time: " + (int)(gameTimer), SCREEN_SIZE/12, MENU_HEIGHT*9/13);
     text("Flags Left: " + flagsLeft, SCREEN_SIZE*44/51, MENU_HEIGHT*9/13);
+  }
+  
+  /****************************************************/
+  //HOW TO PLAY SCREEN
+  if (screenID == 3)
+  {
+    translate(width/2, height/2);
+    htp_screen.render();
   }
 }
 
@@ -121,8 +141,17 @@ void mousePressed() {
   
   /****************************************************/
   //CHOOSING CELLS
-  if (screenID == 2) {
+  else if (screenID == 2) {
     mine_sweeper.render();
+  }
+  
+  /****************************************************/
+  //HOW TO PLAY SCREEN
+  else if (screenID == 3)
+  {
+    if(htp_screen.backOver == true) {
+      screenID = 1;
+    }
   }
 }
 
