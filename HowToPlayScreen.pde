@@ -19,9 +19,15 @@ class HowToPlayScreen extends Buttons
     
     //text
     fill(255);
-    textSize(10);
-    textFont(Font);
-    text("Back",backX+75,backY+70);
+    textSize(60);
+    text("How To Play",-320,-200);
+    textSize(20);
+    text("The goal is to uncover all cells\nthat are not containing mines.",-320,-150);
+    text("Left Click to select cells",-320,-150);
+    text("Right Click to put down flags",-320,-150);
+    text("Beware of mines",-320,-150);
+    textSize(50);
+    text("Back",backX+50,backY+75);
   }//end render()
   
   void update() {
