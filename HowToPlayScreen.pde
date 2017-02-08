@@ -27,15 +27,17 @@ class HowToPlayScreen extends Buttons
     text("Left Click to select cells",-200,-50);
     text("Right Click to put down\nflags",-200,-0);
     text("Beware of mines!",-200,70);
-    stroke(255); fill(0);
-    ellipse(-250, 80, CELL_SIZE/2, CELL_SIZE/2); //Draws the mine
     text("Use the numbers to detect the\nmines nearby",-320,140);
     textSize(50);
     text("Back",backX+50,backY+75);
+    
+    //symbols
+    stroke(255); fill(0);
+    ellipse(-250, 80, CELL_SIZE/2, CELL_SIZE/2); //Draws the mine
   }//end render()
   
   void update() {
-      if ( overBack(endX + width /2 , endY + height /2, endSize, endSize/3) ) {
+      if ( overBack(backX , backY , backSize, backSize/3) ) {
         backOver = true;
       } 
       else {

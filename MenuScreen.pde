@@ -44,21 +44,21 @@ class MenuScreen extends Buttons
     text("How To Play",howToPlayX+15,howToPlayY+60);
     fill(255);
     textSize(60);
-    text("MineSweeper",-320,-200);
+    text("MineSweeper",30,140);
   }//end render()
   
   void update() {
-      if ( overEnd(endX + width /2 , endY + height /2, endSize, endSize/3) ) {
+      if ( overEnd(endX , endY , endSize, endSize/3) ) {
         endOver = true;
         playOver = false;
         howToPlayOver = false;
       } 
-      else if ( overPlay(playX + width / 2, playY + height /2 , playSize, playSize/3) ) {
+      else if ( overPlay(playX , playY , playSize, playSize/3) ) {
         playOver = true;
         endOver = false;
         howToPlayOver = false;
       } 
-      else if ( overHowToPlay(howToPlayX + width / 2, howToPlayY + height /2 , howToPlaySize, howToPlaySize/3) ) {
+      else if ( overHowToPlay(howToPlayX , howToPlayY , howToPlaySize, howToPlaySize/3) ) {
         playOver = false;
         endOver = false;
         howToPlayOver = true;
