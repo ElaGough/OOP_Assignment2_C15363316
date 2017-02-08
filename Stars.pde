@@ -1,6 +1,5 @@
 //function to call stars
 void callstars(){
-  
   fill(random(50,255)); //randomizes colour of stars to make them flicker
   while (starList.size()>500) { //stops arrayList from getting too big
     starList.remove(0);
@@ -21,7 +20,7 @@ class Stars
   
   Stars()
   {
-    pos      =  new PVector(0,0); //(0, 0) is at the centre of the screen due to translate()
+    pos      =  new PVector(350,350); //(0, 0) is at the centre of the screen due to translate()
     velocity =  new PVector(random(-10,10),random(-10,10)); //randomises speed and direction of stars
   }
   

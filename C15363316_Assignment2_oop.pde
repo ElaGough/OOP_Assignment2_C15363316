@@ -50,15 +50,13 @@ void setup()
 }
 
 void draw()
-{
-  translate(width/2, height/2);
-  
+{  
   /****************************************************/
   //menu screen
   if (screenID == 1 ) { 
     noStroke();
     fill(0);
-    rect(-350,-350,700,700);
+    rect(0,0,700,700);
     callstars();
     menu_screen.render();
     //println("menu_screen working");
@@ -120,7 +118,7 @@ void draw()
   {
     noStroke();
     fill(0);
-    rect(-350,-350,700,700);
+    rect(0,0,700,700);
     htp_screen.render();
   }
 }
