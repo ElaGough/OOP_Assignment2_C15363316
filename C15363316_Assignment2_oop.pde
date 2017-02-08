@@ -2,9 +2,9 @@
 
 int screenID = 1;
 
-MenuScreen menu_screen;
-MineSweeper mine_sweeper;
-HowToPlayScreen htp_screen;
+MenuScreen menu_screen; //declares menu screen
+MineSweeper mine_sweeper; //declares mine sweeper
+HowToPlayScreen htp_screen; //declares how to play screen
 Stars stars; //declares stars
 
 //array list for stars created so they are infinetly generated
@@ -176,7 +176,7 @@ void keyPressed() {
 
 void spawnNewLevel() //Spawns a new level
 { 
-  translate(width*2, height*2);
+  
   //Creates the cells
   cellAssignments = new Cell[SCREEN_SIZE/CELL_SIZE][(SCREEN_SIZE - MENU_HEIGHT)/CELL_SIZE]; //Creates a new array of coordinates
   for (int i = 0; i < cellAssignments.length; i++) //Gets the x co-ordinate of each cell
