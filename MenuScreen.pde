@@ -5,7 +5,7 @@ class MenuScreen extends Buttons
   {
     
     update();
-    stroke(255);
+    stroke(60);
     fill(100);
     
     //highlighting button
@@ -42,6 +42,8 @@ class MenuScreen extends Buttons
     fill(255);
     textSize(60);
     text("MineSweeper",30,140);
+    textSize(10); fill(60);
+    text("© Ela Gough C15363316 OOP Assignment 2",150, 680);
   }//end render()
   
   void update() {

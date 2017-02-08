@@ -5,7 +5,7 @@ class HowToPlayScreen extends Buttons
   {
     
     update();
-    stroke(255);
+    stroke(60);
     fill(100);
     
     //highlighting button
