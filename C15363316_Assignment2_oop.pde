@@ -31,7 +31,6 @@ void setup()
 {
   //fullScreen();
   size(700,700);
-  translate(width/2, height/2);
   background(0, 0, 0);
   
   Font = createFont("PressStart2P-Regular.ttf",50);
@@ -41,19 +40,22 @@ void setup()
   htp_screen = new HowToPlayScreen();
   stars = new Stars(); //initilases stars
   
-  if (screenID == 2) {
+  //Rendering the game
+    spawnNewLevel(); //Spawns a new level
+  /*if (screenID == 2) {
     //play game :)
     //Rendering the game
     spawnNewLevel(); //Spawns a new level
-  }
+  }*/
 }
 
 void draw()
 {
+  translate(width/2, height/2);
+  
   /****************************************************/
   //menu screen
   if (screenID == 1 ) { 
-    translate(width/2, height/2);
     noStroke();
     fill(0);
     rect(-350,-350,700,700);
@@ -116,7 +118,6 @@ void draw()
   //HOW TO PLAY SCREEN
   if (screenID == 3)
   {
-    translate(width/2, height/2);
     noStroke();
     fill(0);
     rect(-350,-350,700,700);
@@ -177,6 +178,7 @@ void keyPressed() {
 
 void spawnNewLevel() //Spawns a new level
 { 
+  translate(width*2, height*2);
   //Creates the cells
   cellAssignments = new Cell[SCREEN_SIZE/CELL_SIZE][(SCREEN_SIZE - MENU_HEIGHT)/CELL_SIZE]; //Creates a new array of coordinates
   for (int i = 0; i < cellAssignments.length; i++) //Gets the x co-ordinate of each cell
