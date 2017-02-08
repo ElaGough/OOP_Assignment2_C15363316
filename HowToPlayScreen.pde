@@ -28,7 +28,7 @@ class HowToPlayScreen extends Buttons
     text("Left Click to select cells",150,250);
     text("Right Click to put down\nflags",150,315);
     text("Beware of mines!",150,400);
-    text("Use the numbers to detect the\nmines nearby",30,480);
+    text("Use the numbers to detect the\nmines nearby .... Good Luck :)",30,480);
     textSize(50);
     text("Back",backX+50,backY+75);
     
