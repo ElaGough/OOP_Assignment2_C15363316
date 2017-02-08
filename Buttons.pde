@@ -1,7 +1,7 @@
 class Buttons
 {
-  color Color = color(0);
-  color Highlight = color(170,0,0);
+  color Color = color(20,0,0);
+  color Highlight = color(160,0,0);
   
   
   // Position of play button

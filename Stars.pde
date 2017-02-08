@@ -20,7 +20,7 @@ class Stars
   
   Stars()
   {
-    pos      =  new PVector(350,350); //(0, 0) is at the centre of the screen due to translate()
+    pos      =  new PVector(width/2,height/2); //stars origionate from the centre of the screen
     velocity =  new PVector(random(-10,10),random(-10,10)); //randomises speed and direction of stars
   }
   
