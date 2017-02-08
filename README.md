@@ -58,4 +58,4 @@ Game that plays the classic Minesweeper. Includes a menu navigation screen
 
 click picture to access youtube video...
 
-[![Video](https://upload.wikimedia.org/wikipedia/en/5/5c/Minesweeper_Icon.png)]()
+[![Video](https://upload.wikimedia.org/wikipedia/en/5/5c/Minesweeper_Icon.png)](https://youtu.be/6mZU6JvmETU)
