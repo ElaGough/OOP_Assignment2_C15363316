@@ -15,7 +15,7 @@ Game that plays the classic Minesweeper. Includes a menu navigation screen
 - draw screenID 2 => clearing cells and printing visual
 - spawnNewLevel() => Sets/Resets variables. Rendering the game
 - class Cells => class for the cells updating cells
-- class Minesweeper.render => selecting cells
+- class Minesweeper.render => selecting cells (using mouse pad)
 - clearSurroundingCells() => Clears all surrounding cells that aren't flagged
 
 ** Translate: **
